@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arfayee Alam Khan — Penetration Testing & Web Application Security</title>
+<meta name="description" content="Portfolio of Arfayee Alam Khan, BCA Cyber Security Graduate (IGNOU) seeking internships in penetration testing, SOC analysis, and web application security. Burp Suite, Nmap, OWASP ZAP, Wireshark, Nessus, Kali Linux.">
+<style>
+  :root{
+    --bg:#0b1220; --bg2:#0f1a2e; --card:#121f38; --card2:#16263f;
+    --text:#e8eef7; --muted:#a7b6cc; --accent:#2dd4bf; --accent2:#38bdf8;
+    --border:#223457; --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);color:var(--text);line-height:1.65}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+  nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+  .brand span{color:var(--accent)}
+  .navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+  .navlinks a{color:var(--muted)}
+  .navlinks a:hover{color:var(--text);text-decoration:none}
+  .btn{display:inline-block;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--border);color:var(--text);background:var(--card)}
+  .btn:hover{text-decoration:none;border-color:var(--accent)}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06202b;border:none}
+  .hero{padding:64px 0 48px;text-align:center}
+  .avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);box-shadow:0 12px 40px rgba(45,212,191,.25)}
+  h1{font-size:2.4rem;margin:20px 0 6px;line-height:1.2}
+  .subtitle{font-size:1.15rem;color:var(--muted);max-width:760px;margin:0 auto}
+  .subtitle strong{color:var(--text)}
+  .meta{margin-top:12px;color:var(--muted);font-size:.98rem}
+  .badge{display:inline-block;margin-top:16px;padding:6px 14px;border-radius:999px;background:rgba(45,212,191,.12);color:var(--accent);border:1px solid rgba(45,212,191,.4);font-size:.9rem;font-weight:600}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  section{padding:44px 0}
+  h2{font-size:1.6rem;margin-bottom:8px}
+  h2 .bar{color:var(--accent)}
+  .lead{color:var(--muted);max-width:820px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+  .card h3{font-size:1.08rem;margin-bottom:10px;color:var(--accent2)}
+  .card ul{list-style:none}
+  .card li{padding:5px 0;color:var(--muted)}
+  .card li::before{content:"▸ ";color:var(--accent)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .chip{padding:7px 14px;border-radius:999px;background:var(--card2);border:1px solid var(--border);font-size:.92rem}
+  table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--card);border-radius:var(--radius);overflow:hidden}
+  th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{background:var(--card2);color:var(--accent2);font-size:.92rem}
+  td{color:var(--muted)}
+  td:first-child{color:var(--text);font-weight:600}
+  .labs li{margin:10px 0;color:var(--muted);list-style:none;padding-left:22px;position:relative}
+  .labs li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+  .contact-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+  .contact-card .label{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .contact-card .value{font-size:1.05rem;font-weight:600;margin-top:4px;word-break:break-word}
+  footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--muted);text-align:center;font-size:.92rem}
+  @media(max-width:640px){h1{font-size:1.9rem}.avatar{width:140px;height:140px}th,td{padding:10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Arfayee <span>Alam Khan</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#labs">Lab Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="resume.pdf" download>Download Resume</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <img class="avatar" src="profile.jpg" alt="Arfayee Alam Khan">
+    <h1>Arfayee Alam Khan</h1>
+    <p class="subtitle"><strong>BCA Cyber Security Graduate</strong> | Penetration Testing &amp; Web Application Security | Burp Suite, Nmap, OWASP ZAP</p>
+    <p class="meta">📍 Ranchi, Jharkhand, India · Open to opportunities in India, the Gulf, Japan, and remote roles</p>
+    <span class="badge">Seeking Internships in Pentesting &amp; SOC</span>
+    <div class="cta">
+      <a class="btn primary" href="resume.pdf" download>📄 Download Resume</a>
+      <a class="btn" href="https://www.linkedin.com/in/arfayee-alam-khan-a78a83307" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/arfayee-khan" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:arfayee@gmail.com">Email Me</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2><span class="bar">/</span> About Me</h2>
+    <p class="lead">Bachelor of Computer Applications (BCA) graduate in Cyber Security from Indira Gandhi National Open University (IGNOU, 2022–2026), focused on offensive security, web application penetration testing, and API security.</p>
+    <p class="lead" style="margin-top:12px">I completed 140+ hours of structured coursework through INE under instructor Alexis Ahmed, covering web application pentesting, injection attacks, authentication and session testing, and server-side attacks — with practical skills built through hands-on labs in Linux, HTTP/HTTPS protocols, OWASP methodologies, and vulnerability assessment.</p>
+    <p class="lead" style="margin-top:12px"><strong style="color:var(--text)">Currently seeking:</strong> internships and entry-level opportunities in penetration testing, SOC analysis, and web application security.</p>
+  </section>
+
+  <section id="skills">
+    <h2><span class="bar">/</span> Core Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Security Testing</h3>
+        <ul>
+          <li>Web Penetration Testing</li>
+          <li>API Penetration Testing</li>
+          <li>Vulnerability Assessment</li>
+          <li>OWASP Methodologies</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Burp Suite</li>
+          <li>Nmap</li>
+          <li>OWASP ZAP</li>
+          <li>Wireshark</li>
+          <li>Tenable Nessus</li>
+          <li>Kali Linux</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Technical Foundations</h3>
+        <ul>
+          <li>Networking basics</li>
+          <li>Python basics</li>
+          <li>HTTP/HTTPS protocols</li>
+          <li>Windows &amp; Linux</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chips">
+      <span class="chip">Ethical Hacking</span><span class="chip">Network Security</span><span class="chip">SQL Injection</span><span class="chip">XSS</span><span class="chip">JWT Security</span><span class="chip">SSRF</span><span class="chip">XXE</span><span class="chip">WAF Bypass</span><span class="chip">BOLA</span><span class="chip">Session Hijacking</span>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2><span class="bar">/</span> Certifications &amp; Training — INE</h2>
+    <p class="lead">Instructor: Alexis Ahmed · 140+ hours total</p>
+    <table>
+      <tr><th>Certification</th><th>Completed</th><th>CPEs</th><th>Focus</th></tr>
+      <tr><td>API Penetration Testing</td><td>May 2026</td><td>11</td><td>REST API security, BOLA, broken authentication, mass assignment, rate-limiting bypass</td></tr>
+      <tr><td>Server-Side Attacks</td><td>May 2026</td><td>10</td><td>SSRF, XXE and server-side vulnerability exploitation</td></tr>
+      <tr><td>Filter Evasion &amp; WAF Bypass Techniques</td><td>May 2026</td><td>11</td><td>Filter evasion and WAF bypass</td></tr>
+      <tr><td>Advanced Injection Attacks</td><td>May 2026</td><td>32</td><td>SQL/NoSQL/command injection, XSS, SSTI, blind injection</td></tr>
+      <tr><td>Authentication &amp; Session Management Testing</td><td>Apr 2026</td><td>23</td><td>JWT, session hijacking, cookie security, broken authentication</td></tr>
+      <tr><td>Intro to Advanced Web Application Penetration Testing</td><td>Feb 2026</td><td>12</td><td>Web pentesting fundamentals and methodology</td></tr>
+    </table>
+  </section>
+
+  <section id="labs">
+    <h2><span class="bar">/</span> Hands-On Lab Experience</h2>
+    <ul class="labs">
+      <li>Applied OWASP testing methodologies in lab environments to identify and assess web application and API vulnerabilities.</li>
+      <li>Practised injection, authentication and session testing (SQL injection, XSS, JWT, cookie security) from INE coursework in Kali Linux.</li>
+      <li>Used Burp Suite, OWASP ZAP, Nmap, Wireshark and Nessus for reconnaissance, scanning, traffic analysis and vulnerability assessment.</li>
+      <li>Analysed HTTP/HTTPS traffic and protocols as part of structured security labs and platform exercises.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2><span class="bar">/</span> Education</h2>
+    <div class="card" style="margin-top:18px">
+      <h3>Bachelor of Computer Applications (BCA), Cyber Security</h3>
+      <p style="color:var(--muted)">Indira Gandhi National Open University (IGNOU), 2022–2026</p>
+      <p style="color:var(--muted);margin-top:8px">Languages: English, Hindi, Urdu · Interests: Chess, badminton, reading, solving puzzles</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="bar">/</span> Contact</h2>
+    <p class="lead">Open to internships and entry-level roles in penetration testing, SOC analysis, and web application security. Reach me at:</p>
+    <div class="contact-grid">
+      <div class="contact-card"><div class="label">Email</div><div class="value"><a href="mailto:arfayee@gmail.com">arfayee@gmail.com</a></div></div>
+      <div class="contact-card"><div class="label">Phone</div><div class="value"><a href="tel:+919939228566">+91 99392 28566</a></div></div>
+      <div class="contact-card"><div class="label">LinkedIn</div><div class="value"><a href="https://www.linkedin.com/in/arfayee-alam-khan-a78a83307" target="_blank" rel="noopener">linkedin.com/in/arfayee-alam-khan-a78a83307</a></div></div>
+      <div class="contact-card"><div class="label">GitHub</div><div class="value"><a href="https://github.com/arfayee-khan" target="_blank" rel="noopener">github.com/arfayee-khan</a></div></div>
+      <div class="contact-card"><div class="label">Location</div><div class="value">Ranchi, Jharkhand, India</div></div>
+      <div class="contact-card"><div class="label">Resume</div><div class="value"><a href="resume.pdf" download>Download PDF</a></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Arfayee Alam Khan · BCA Cyber Security Graduate · Penetration Testing &amp; Web Application Security</div>
+</footer>
+</body>
+</html>
